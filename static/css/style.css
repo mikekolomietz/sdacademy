@@ -1,0 +1,43 @@
+.caption h3 {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 45px;
+  margin-top: -45px;
+  margin-bottom: 25px;
+}
+
+.contact {
+  margin-left: 45px;
+}
+
+.contact .value {
+  font-weight: bold;
+}
+
+.contact .value a {
+  color: #555;
+}
+
+.navbar-default {
+  background-color: #d22;
+}
+
+body {
+  background-color: #666;
+}
+
+.thumbnail {
+  background-color: #999;
+}
+
+.navbar-default .navbar-brand {
+    color: #eee;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #eee;
+}
+
+#main .thumbnail {
+  padding-left: 20px;
+}
