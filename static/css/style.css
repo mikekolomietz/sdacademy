@@ -41,3 +41,11 @@ body {
 #main .thumbnail {
   padding-left: 20px;
 }
+
+.about {
+ font-style: italic;
+}
+
+.description {
+ font-style: italic;
+}
