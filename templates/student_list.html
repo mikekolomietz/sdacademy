@@ -8,8 +8,9 @@
     <title>SD Academy | Students</title>
 
     <!-- Bootstrap -->
-    <link href="../static/css/bootstrap.css" rel="stylesheet">
-    <link href="../static/css/style.css" rel="stylesheet">
+    {% load staticfiles %}
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,9 +36,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Main</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-            <li class="active"><a href="student_list.html">Students<span class="sr-only">(current)</span></a></li>
+            <li><a href="{% url 'index' %}">Main</a></li>
+            <li><a href="{% url 'contact' %}">Contacts</a></li>
+            <li class="active"><a href="{% url 'student_list' %}">Students<span class="sr-only">(current)</span></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -58,7 +59,7 @@
             </thead>
             <tbody>
               <tr>
-                <td><a href="student_detail.html">1</a></td><td>Solomatin</td><td>Petr</td><td>Ukraine, Kharkiv, Nauky av. 14</td><td>solomka</td>
+                <td><a href="{% url 'student_detail' %}">1</a></td><td>Solomatin</td><td>Petr</td><td>Ukraine, Kharkiv, Nauky av. 14</td><td>solomka</td>
               </tr>
               <tr>
                 <td>2</td><td>Lovygina</td><td>Oksana</td><td>Ukraine, Kharkiv, Heroiv Pratsi str. 143b, 112</td><td>ksena_love</td>
@@ -80,6 +81,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../static/js/bootstrap.js"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
   </body>
 </html>
